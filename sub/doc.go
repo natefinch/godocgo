@@ -30,7 +30,8 @@
 //
 // If you need more than one example for any of these, you can make additional
 // functions with the same name, and a suffix of _sometext, where sometext is
-// whatever lowercase text you want.
+// whatever lowercase text you want.  The suffix will be shown in parentheses
+// after the Example label.
 //
 // What gets displayed
 //
