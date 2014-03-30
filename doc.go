@@ -89,20 +89,18 @@
 //
 // This Text
 //
-// The text you are reading is long form documentation on the main package of a
-// Go executable.  The Go authors were aware that you might need a really long
-// comment on your application, so they devoted an entire file to it - doc.go.
-// The contents of the file are just a really long comment immediately followed
-// by the package declaration "package main".  You can also have code in doc.go,
-// but traditionally it only contains documentation.
+// The text you are reading is documentation on the main package of a Go
+// executable.  It is simply a comment attached (immediately preceding) the
+// package <foo> declaration (in this case package main, since this is the
+// application package). It is traditional to put long form documentation in a
+// file called doc.go, without other code in that file, but that is not
+// necessary.  A comment on the package declaration in any file will work, and
+// if you have multiple comments, they'll get concatenate.
 //
 // The first sentence in this file (up to the first period) will be the label
 // next to the link in godoc's index.  This should be a short description of
 // what the command does, and traditionally starts with "Command <name-of-
 // command>".
-//
-// Note that doc.go only applies to the main package of applications, not for
-// library packages.
 //
 // To read more of the article, and explore more of what godoc has to offer,
 // click on the link to the package named "sub" below.
