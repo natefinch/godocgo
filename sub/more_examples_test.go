@@ -2,6 +2,8 @@ package sub_test
 
 import (
 	"fmt"
+
+	"github.com/natefinch/godocgo/sub"
 )
 
 // This is an example function for a type.  To make an example show up on a

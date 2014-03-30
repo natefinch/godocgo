@@ -1,5 +1,6 @@
-// This statement is actually "package sub", but it gets translated to "package
-// main" for the example, to make it a fully self-contained runnable file.
+// This statement is actually "package sub" in the file, but it gets translated
+// to "package main" for the example, to make it a fully self-contained runnable
+// file.
 package sub
 
 import (
