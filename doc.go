@@ -16,17 +16,20 @@
 // github.com/natefinch/godocgo, and have it as a reference locally on your hard
 // drive.
 //
-// To view the godoc on your own machine, just run
+// To view this godoc on your own machine, just run
 //
 //   go get code.google.com/p/go.tools/cmd/godoc
-//   godoc -http=:8080 -play
+//   go get github.com/natefinch/godocgo
+//   godoc -http=:8080
+//
+// (if you already have godoc, you can skip the first step)
 //
 // Then you can open a web browser and go to
 // http://localhost:8080/pkg/github.com/natefinch/godocgo/
 //
 // Alternatively, you can view this on the excellent godoc.org, by going to
 // http://godoc.org/github.com/natefinch/godocgo (note that godoc.org has
-// slighty different styling than the godoc tool).
+// different styling than the godoc tool, but the content is the same).
 //
 // Godoc is Awesome
 //
@@ -49,11 +52,11 @@
 //
 // Formatting
 //
-// The line above above this is heading. It is simply a single line without
-// punctuation with paragraphs before and after it.  As you can see, it gets
-// special formatting.  If you're viewing this using godoc, it will be included
-// in the table of contents at the top of the file.  If you're viewing this on
-// godoc.org, there is, sadly, no table of contents.
+// Paragraphs are delineated by blank lines.  Headings like the above are simply
+// a single line without punctuation with paragraphs before and after it.  If
+// you're viewing this using godoc, it will be included in the table of contents
+// at the top of the file.  If you're viewing this on godoc.org, there is,
+// sadly, no table of contents.
 //
 // Below this is pre-formatted text.  All that is required for it to be rendered
 // in that way is that it be indented from the surrounding comments (you can use

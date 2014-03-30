@@ -18,11 +18,19 @@ type Food struct {
 }
 
 // NewFood creates a new Food with the given name and a calculated weight.
+//
+// Note that you do not need to (and should not) make separate lines describing
+// each parameter to the function.  Simply refer to the parameters by their name
+// when you need to refernce them.
 func NewFood(name string) Food {
 	return Food{name, len(name)}
 }
 
 // Weight reports the weight of the food in letters.
+//
+// When decribing a function without parameters that simply returns data, it is
+// traditional to write the doc saying the function reports foo, rather than
+// *returns* foo.
 //
 // The example below intentionally fails during go test, to show you what that
 // looks like.  The test will report:
