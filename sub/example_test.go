@@ -11,8 +11,9 @@ import (
 // because this is a full-file example, godoc translates it to func main() to
 // make it into a full go command.
 
-// This text is the comment on the Example() function itself, and is
-// displayed ahead of the actual example code in the documentation.
+// This text is the comment on the Example() function itself, and is displayed
+// ahead of the actual example code in the documentation.  Note that unlike docs
+// elsewhere, docs on examples are plaintext only, so be brief.
 func Example() {
 	hello()
 	// output:

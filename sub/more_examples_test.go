@@ -1,20 +1,30 @@
-package sub_test
+package sub
 
 import (
 	"fmt"
-
-	"github.com/natefinch/godocgo/sub"
 )
 
-// This is an example function for a type.  To make an example show up on a
-// type, just put a function in a testfile called Example<Typename>(), for
-// example, this function is func ExampleFood() in more_examples_test.go.  If
-// you need more than one example function for a type, function, or method, just
-// make more functions, except give them a unique lowercase suffix after an
-// underscore, like ExampleFood_more().
+// This is an example function for a type.
 func ExampleFood() {
-	f := sub.NewFood("apple")
-	fmt.Println(f.Weigh())
+	f := NewFood("apple")
+	fmt.Println(f.Weight())
 	// output:
 	// 5
+}
+
+// Example on a function.
+func ExampleNewFood() {
+	f := NewFood("pear")
+	fmt.Println(f.Name)
+	// output:
+	// pear
+}
+
+// Example on a method.  Note that if you run go test, this test will fail,
+// because the output doesn't match.
+func ExampleFood_Weight() {
+	f := NewFood("pineapple")
+	fmt.Println(f.Weight())
+	// output:
+	// 10
 }
