@@ -12,10 +12,6 @@
 // godoc?"  It also has tips on common conventions and idioms used in
 // documenting Go code.
 //
-// You can fork this repo in github, or just go get
-// github.com/natefinch/godocgo, and have it as a reference locally on your hard
-// drive.
-//
 // Please feel free to send me pull requests if you see errors or places where
 // things could be improved.
 //
