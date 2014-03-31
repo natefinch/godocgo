@@ -67,6 +67,19 @@
 //		// 5
 //	}
 //
+// Runnable Examples
+//
+// Some of your examples may be able to be run right from the documentation,
+// using the same technology that play.golang.org uses (in fact, godoc.org's
+// support for this actually sends you to play.golang.org).  To see this on your
+// local godoc, start godoc with the -play option.  However, be aware that the
+// use of this option is limited.
+//
+// In order for an example to be runnable, it can only reference code in the
+// same file as it, or code in the standard library.  This ends up being quite
+// limiting, because you can't actually use any of the types or functions
+// written in your package.
+//
 // Package example
 //
 // The example below is a whole-file example, and shows how to embed an example
