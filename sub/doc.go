@@ -52,7 +52,7 @@
 // run of "go test", the code in an example is run.  This makes sure your
 // examples will always compile.  In addition, if the example outputs to stdout,
 // you can actually test the output, and have a failing test if the output
-// doesn't pass. To do this, simply put a comment at the end of the function,
+// doesn't match. To do this, simply put a comment at the end of the function,
 // with the first line as "output:". Further lines will be stripped of their
 // comment prefix, trimmed of whitespace, and matched against the example's
 // output (line breaks in the comments match "\n" from the output of the
@@ -70,10 +70,10 @@
 // Runnable Examples
 //
 // Some of your examples may be able to be run right from the documentation,
-// using the same technology that play.golang.org uses (in fact, godoc.org's
-// support for this actually sends you to play.golang.org).  To see this on your
-// local godoc, start godoc with the -play option.  However, be aware that the
-// use of this option is limited.
+// using the same technology that http://play.golang.org uses (in fact,
+// godoc.org's support for this actually sends you to play.golang.org).  To see
+// this on your local godoc, start godoc with the -play option.  However, be
+// aware that the use of this option is limited.
 //
 // In order for an example to be runnable, it can only reference code in the
 // same file as it, or code in the standard library.  This ends up being quite
