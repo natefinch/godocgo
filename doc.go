@@ -1,4 +1,3 @@
-// Copyright 2014 Nate Finch
 // Note that you must leave a blank line between the copyright header and your
 // actual doc string, to avoid having this documentation shown in godoc.
 
@@ -8,13 +7,17 @@
 //
 // I started to write this as a blog post, intending to link to a repo with
 // examples, and then realized that there was no reason I couldn't write the
-// whole post as godoc on the repo, so here it is.  This repo is an example of
-// good practices for documenting Go code, and also serves as a working example
-// of "hey, how do I get something like that to show up in my godoc?"
+// whole post as godoc on the repo, so here it is.  This repo serves as a
+// working example of "hey, how do I get something like that to show up in my
+// godoc?"  It also has tips on common conventions and idioms used in
+// documenting Go code.
 //
 // You can fork this repo in github, or just go get
 // github.com/natefinch/godocgo, and have it as a reference locally on your hard
 // drive.
+//
+// Please feel free to send me pull requests if you see errors or places where
+// things could be improved.
 //
 // To view this godoc on your own machine, just run
 //
@@ -104,6 +107,10 @@
 // next to the link in godoc's index.  This should be a short description of
 // what the command does, and traditionally starts with "Command <name-of-
 // command>".
+//
+// Note that all the tips that apply to code in packages, as demonstrated in
+// package sub below, also apply to commands, I just thought this page was long
+// enough already, so I put everything else in the next package :)
 //
 // To read more of the article, and explore more of what godoc has to offer,
 // click on the link to the package named "sub" below.

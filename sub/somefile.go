@@ -82,3 +82,22 @@ func NewFood(name string) Food {
 func (f Food) Weight() int {
 	return f.weight
 }
+
+// Zap consumes the food and prints out a nasty message.
+//
+// This is just another top level function to show how the alphabetical sorting
+// works.
+func Zap(f Food) {
+	fmt.Printf("I hate %ss!", f.Name)
+
+}
+
+// Eat consumes the food and prints out a nice message.
+//
+// This is an example of a function that isn't a "constructor" style function,
+// so it will be sorted at the top level of the documentation.
+//
+// Functions get sorted before types.
+func Eat(f Food) {
+	fmt.Printf("I love %ss!", f.Name)
+}
