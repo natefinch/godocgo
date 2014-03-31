@@ -97,7 +97,7 @@
 // application package). It is traditional to put long form documentation in a
 // file called doc.go, without other code in that file, but that is not
 // necessary.  A comment on the package declaration in any file will work, and
-// if you have multiple comments, they'll get concatenate.
+// if you have multiple comments, they'll be concatenated together.
 //
 // The first sentence in this file (up to the first period) will be the label
 // next to the link in godoc's index.  This should be a short description of
