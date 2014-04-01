@@ -6,30 +6,33 @@ package sub
 //
 // Because it is declared on its own and not in a const() block, Applename gets
 // full formatting support.
-//
-// Note that the declarations are sorted alphabetically, not based on what order
-// they exist in the code.
 const AppleName = "apple"
 
+// This text is a doc comment on the const block as a whole.  Unlike the
+// comments inside the block, this text has full formatting.
+//
+// This can be a nice way to write a simgle comment about a group of variables.
 const (
-	// PearName is an exported constant used to create pear foods.
-	// Constants and variables enclosed in a block like this one get printed out
+	// PearName is an exported constant used to create pear foods. Docs on
+	// constants and variables enclosed in a block like this one get printed out
 	// as-is.
 	PearName = "pear"
+
+	// PineappleName is the name of a pineapple.
+	PineappleName = "pineapple"
 )
 
 // Apple is a global variable in the package.
-//
-// Formatting
 //
 // Because apple is declared on its own, rather in a block of var (), its
 // documentation gets full formatting support.
 var Apple = NewFood(AppleName)
 
+// This is a block of variables with a formatted comment.
+//
+// Pretty nice.
 var (
 	// Pear is another global variable in the package.
-	//
-	// Because it's in a var block, it just gets plaintext docs.  Poor pear.
 	Pear = NewFood(PearName)
 )
 

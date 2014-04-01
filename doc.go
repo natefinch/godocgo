@@ -77,7 +77,8 @@
 // Attaching Comments
 //
 // In Go, any comment which immediately precedes Go code is considered a comment
-// about that code, and godoc will associate the two in its documentation.
+// about that code.  Only comments on exported names will be included in the
+// documentation.
 //
 //   // Foo is a function that deserves a comment.  This comment becomes the
 //   // godoc comment for Foo.
@@ -88,6 +89,26 @@
 // things like build tags and copyright notices at the top of files.  Always
 // make sure you have a space between those comments and the package
 // declaration.
+//
+// Content
+//
+// Comments exist to tell developers what the code is for and how to use it.
+// They should be concise and to the point.  Comments should be full sentences
+// that end with a period.  This generally forces you to offer complete thoughts
+// in your comments, rather than trying to make it into shorthand.  It's also
+// useful, because then no one has to wonder if you forgot to write the end of
+// that sentence.
+//
+// Comments in Go traditionally start with the name of the thing they're
+// commenting about.  Thus, if you're commenting on a type Foo, the comment
+// would start "Foo is ...".  This makes it clear that the comment is about that
+// name, and can help connect the two if they get separated.  Often times the
+// first sentence of a comment is extracted as a short summary, so make it short
+// and useful on its own.
+//
+// Always comment every exported name in your program.  You never know when a
+// little extra information will help someone use your code.  Also, it just
+// makes your documentation look complete.
 //
 // This Text
 //
