@@ -1,5 +1,7 @@
 package sub
 
+import "fmt"
+
 // BUG(natefinch) This is a bug description. Bugs are an exception to the rule
 // about only attached comments getting displayed in godoc.  Simply make a
 // comment that starts with BUG(foo) where foo is the name of the person
