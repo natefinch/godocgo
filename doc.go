@@ -129,6 +129,8 @@
 // package sub below, also apply to commands, I just thought this page was long
 // enough already, so I put everything else in the next package :)
 //
+// To Read The Rest
+//
 // To read more of the article, and explore more of what godoc has to offer,
 // click on the link to the package named "sub" below.
 package main
