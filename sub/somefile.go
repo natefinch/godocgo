@@ -16,7 +16,7 @@ package sub
 //
 // Formatting
 //
-// Because it is declared on its own and not in a const() block, Applename gets
+// Because it is declared on its own and not in a const() block, AppleName gets
 // full formatting support.
 const AppleName = "apple"
 
