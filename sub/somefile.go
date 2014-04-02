@@ -11,7 +11,7 @@ const AppleName = "apple"
 // This text is a doc comment on the const block as a whole.  Unlike the
 // comments inside the block, this text has full formatting.
 //
-// This can be a nice way to write a simgle comment about a group of variables.
+// This can be a nice way to write a single comment about a group of variables.
 const (
 	// PearName is an exported constant used to create pear foods. Docs on
 	// constants and variables enclosed in a block like this one get printed out
