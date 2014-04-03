@@ -54,6 +54,9 @@ var (
 //
 // Because it is declared with a type defined within the package, it is
 // sorted with the type definition in the documentation.
+//
+// Below is the auto-embedded example from the function ExampleFood in
+// more_examples_test.go.
 var Favorite Food = Pear
 
 // Food is a type to show how type documentation works.
@@ -61,9 +64,6 @@ var Favorite Food = Pear
 // Formatting
 //
 // You always get full formatting on type, function, and method docs.
-//
-// Below is the auto-embedded example from the function ExampleFood in
-// more_examples_test.go.
 type Food struct {
 	// Name holds the common name of the food.
 	//
