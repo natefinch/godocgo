@@ -50,11 +50,11 @@ var (
 	Pear = NewFood(PearName)
 )
 
-// Favourite is a global variable in the package.
+// Favorite is a global variable in the package.
 //
 // Because it is declared with a type defined within the package, it is
 // sorted with the type definition in the documentation.
-var Favourite Food = Pear
+var Favorite Food = Pear
 
 // Food is a type to show how type documentation works.
 //
