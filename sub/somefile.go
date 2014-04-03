@@ -1,5 +1,7 @@
 package sub
 
+import "fmt"
+
 // BUG(natefinch) This is a bug description. Bugs are an exception to the rule
 // about only attached comments getting displayed in godoc.  Simply make a
 // comment that starts with BUG(foo) where foo is the name of the person
@@ -16,7 +18,7 @@ package sub
 //
 // Formatting
 //
-// Because it is declared on its own and not in a const() block, Applename gets
+// Because it is declared on its own and not in a const() block, AppleName gets
 // full formatting support.
 const AppleName = "apple"
 
@@ -47,6 +49,12 @@ var (
 	// Pear is another global variable in the package.
 	Pear = NewFood(PearName)
 )
+
+// Favorite is a global variable in the package.
+//
+// Because it is declared with a type defined within the package, it is
+// sorted with the type definition in the documentation.
+var Favorite Food = Pear
 
 // Food is a type to show how type documentation works.
 //
@@ -116,3 +124,20 @@ func Zap(f Food) {
 func Eat(f Food) {
 	fmt.Printf("I love %ss!", f.Name)
 }
+
+// Weight is a type to show how type-associated const and var documentation works.
+type Weight int
+
+// Constant declarations are sorted with their type definition when all the
+// constant types match.
+//
+// This works with elided type definition using iota, but does not work when
+// the constant type is deduced from the constant expression.
+const (
+	Small Weight = 1  // This much fruit is not enough.
+	Big   Weight = 20 // This is way too much fruit.
+)
+
+// Variable declarations of a specific type are also associated with their type
+// declaration in the documentation.
+var WeightPreference Weight
