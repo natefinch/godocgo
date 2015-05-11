@@ -17,7 +17,7 @@
 //
 // To view this godoc on your own machine, just run
 //
-//   go get code.google.com/p/go.tools/cmd/godoc
+//   go get golang.org/x/tools/cmd/godoc
 //   go get github.com/natefinch/godocgo
 //   godoc -http=:8080
 //
