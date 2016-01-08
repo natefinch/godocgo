@@ -7,7 +7,7 @@ To read the docs in your browser right now, click on the godoc reference above t
 
 Or you can run godoc locally:
 ```
-  go get code.google.com/p/go.tools/cmd/godoc
+  go get golang.org/x/tools/cmd/godoc
   go get github.com/natefinch/godocgo
   godoc -http=:8080
 ```
